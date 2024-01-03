@@ -7,5 +7,5 @@ fn greet(){
     }
 }
 fn main(){
-    greet()
+    greet();
 }
