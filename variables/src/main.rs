@@ -21,7 +21,6 @@ fn main(){
     print!("the value of b is {}\n", b);
     assert_eq!(c, b); // assert_eq! is a macro, it will throw an error if the two values are not equal assert_eq!是一个宏，如果两个值不相等，它会抛出一个错误
 
-   
     let (o, p, q, r, e);
     (o, p) = (1, 2);
     (q, .., r, _) = (1, 2, 3, 4, 5);

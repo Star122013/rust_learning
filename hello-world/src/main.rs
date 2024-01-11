@@ -3,7 +3,9 @@ fn greet(){
     let english = "hello,world";
     let regions = [chinese, english];
     for region in regions.iter(){
-        println!("{}", &region)
+        println!("{}", &region);
+        let a = 1;
+        print!("{}", a);
     }
 }
 fn main(){
