@@ -71,11 +71,11 @@ fn if_else() -> i32 {
         y
     }
 }
-fn forever() -> ! { // ! 表示函数不会返回 死循环 用于 panic! 宏 
+/* fn forever() -> ! { // ! 表示函数不会返回 死循环 用于 panic! 宏 
     loop {
       //...
     };
-}
+} */
 
 fn panic_example() -> ! {
     panic!("panic example");
