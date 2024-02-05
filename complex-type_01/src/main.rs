@@ -39,6 +39,24 @@ fn example_string_remove() {
     dbg!(s1);
 }
 
+// 元组 tuple
+fn example_tuple() {
+    let tuple01: (i32, i32, i32, i32, i32) = (1, 2, 3, 4, 5);
+    let (a, b, c, d, e) = tuple01;
+    println!("{} {} {} {} {}", a, b, c, d, e);
+    let (a, b, _, _, e) = tuple01;
+    println!("{} {} {}", a, b, e);
+    let tuple02: (i32, i32, i32, i32, i32) = (1, 2, 3, 4, 5);
+    println!("{}", tuple02.0);
+}
+
+fn calaulate_length(s: &String) -> (&String, usize){
+    let length = s.len();
+    (s, length)
+}
+
+
+
 
 fn main(){
     let s = String::from("xiaoming");
@@ -50,5 +68,8 @@ fn main(){
     example_string_append();
     example_string_replace();
     example_string_remove();
+    example_tuple();
+    let (s, length) = calaulate_length(&s);
+    print!("{} {}", s, length);
 }
 
